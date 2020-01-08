@@ -1,5 +1,20 @@
 
 
-h1 {
-  color: rgb(141, 227, 238);
+.fa {
+  background-image: url('../../assets/images/message_me.png');
+  color: rgb(72, 168, 237);
+  
+  box-sizing: content-box;
+  line-height: 200px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-color: rgb(256, 256, 256);
+}
+
+.fixed-height {
+  height: 450px;
 }
