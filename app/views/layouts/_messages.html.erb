@@ -1,0 +1,11 @@
+<% flash.each do |message_type, message_content| %>
+  <div class="row">
+    <div class="ui <%= message_type %> message alert">
+      <a href="#" class="close icon" data-dismiss="alert"><i class="close icon"></i></a>          
+      <div class="header">
+        <span><%= message_content %></span>    
+      </div>
+    </div>
+  </div>
+<% end %>
+

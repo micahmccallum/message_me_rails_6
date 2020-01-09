@@ -8,8 +8,10 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require('jquery')
+//= require semantic-ui
 
 import '../stylesheets/custom_application.css.scss'
+import '../../assets/javascript/custom.js'
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
