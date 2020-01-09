@@ -11,7 +11,7 @@ require('jquery')
 //= require semantic-ui
 
 import '../stylesheets/custom_application.css.scss'
-import '../../assets/javascript/custom.js'
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -20,3 +20,13 @@ import '../../assets/javascript/custom.js'
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+function scroll_bottom() {
+  if ($('#messages').length > 0) {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+  }
+}
+
+$(document).on('turbolinks:load', function (){
+  scroll_bottom();
+})
