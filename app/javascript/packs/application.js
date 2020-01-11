@@ -27,6 +27,16 @@ function scroll_bottom() {
   }
 }
 
+function submit_message() {
+  $('#message_body').on('keydown', function(e) {
+    if (e.keyCode == 13) {
+      $('button').click();
+      e.target.value = "";
+    };
+  });
+}
+
 $(document).on('turbolinks:load', function (){
   scroll_bottom();
+  submit_message();
 })

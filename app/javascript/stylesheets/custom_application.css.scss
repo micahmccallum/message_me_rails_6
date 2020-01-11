@@ -20,5 +20,12 @@
 }
 
 #messages {
+  height: 200px;
   overflow: auto;
+}
+
+.input {
+  button {
+    display: none;
+  }
 }
